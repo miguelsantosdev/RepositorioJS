@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSAPORTE</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: azure;
+            text-align: center;
+        }
+        h1{           
+            background-color: dodgerblue;
+            color: darkgoldenrod;
+            text-shadow: 1px 1px 1px black;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DIVISÃO DE PASSAPORTE</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Checar nacionalidade" onclick="checar()">
+    <div id="nacionalidade"></div>
+    <script>
+            function checar(){
+               var txtorigem = window.document.getElementById('txtpais')
+               var origem = (txtorigem.value)
+               var nacionalidade = document.querySelector('div#nacionalidade')
+               nacionalidade.innerHTML = `PAÍS DE ORIGEM: ${origem}.`
+               if (origem !='Brasil'){
+                    nacionalidade.innerHTML = `<p>Você é Estrangeiro.</p>`
+                    nacionalidade.style.background = 'darkblue'
+                    nacionalidade.style.color = 'white'
+
+               } else{
+                    nacionalidade.innerHTML = `<p>Você é Brasileiro.</p>`
+                    nacionalidade.style.background = 'darkgreen'
+                    nacionalidade.style.color = 'yellow'
+               }
+            }
+        
+    </script>
+
+</body>
+</html>

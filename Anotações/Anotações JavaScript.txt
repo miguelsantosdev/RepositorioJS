@@ -1,0 +1,435 @@
+JAVASCRIPT
+
+
+- O JavaScript atende tanto Cliente quanto servidor.
+
+- Todo Website consite em ter: Conteúdo, Design e Interações. (HTML, CSS, JAVASCRIPT)
+
+--------------------------------------------------------------------------
+
+NodeJs = Roda Java Script fora do navegador
+
+ECMAScript = JavaScript padronizado.
+
+Frameworks = Jquery, Angular(Google), NodeJs, React(Facebook), Vue, Electron
+
+-------------------------------------------------------------
+JANELAS
+window.alert('mensagem') = cria um alerta em janela assim que atualiza a pagina.
+window.confirm('mensagem') = solicita uma confirmação de alguma informação, dando opção de Ok e Cancelar
+window.prompt('mensagem') = gera uma caixa de resposta a uma pergunta que deve ser preenchida.
+
+----------------------------------------------------------
+
+VARIÁVEIS E TIPOS PRIMITIVOS
+
+- Use comentários no seu código pra mantê-lo bem documentado
+
+comentários = //(unica linha) ou /*(mais de uma linha *\
+
+= -> recebe
+
+a1 = recebe valor
+
+= null (nulo) nao recebe
+
+var ou let = variavel
+
+cadeia de caracteres = string
+
+No Javascript vcpode usar os 3 tipos de aspas para determinar uma string.
+
+Nome de variavel é denominado de Identificador
+
+* Podem começar com letra, $ ou _
+* Não pode começar com números
+* É possível usar letras ou números
+* Não podem conter espaços
+* É possível usar acentos e símbolos
+* Não podem ser palavras reservadas (comandos)
+
+- fechar o Nodejs .exit
+
+- É possível acessar o Nodejs no terminal do VSCODE
+
+- CTRL + L no terminal limpa a tela do terminal
+
+Dicas de variáveis
+
+* Maiúsculas e minúsculas fazem diferença
+
+* Tente escolher nomes coerentes para variáveis
+
+* evite colocar só letras ou só numeros na variavel
+
+3 tipos primitivos: Number, string, boolean
+
+number = 5, 18, -12, 0.5, -15.4, 3.14
+
+boolean = true, false
+
+string = 'Google', "JavaScript", `Maria`
+
+typof = tipo de (mostra o tipo primitivo)
+
+
+--------------------------------------------------------
+
+Manipulação de Dados
+
+var nome = window.prompt("Whats your name ?')
+
++ = Concatenar 
+
+exemplo: window.alert("Prazer", + nome)
+
+- nome é uma variavel para o nome do usuario.
+
+se a variavel for do tipo number, o + realiza a soma dos numeros.
+
+Number.parseInt(n) = inteiro (int)
+Number.parseFloat(n) = real (float)
+Number(n) = o JS determina o tipo de acordo com o valor inserido.
+
+exemplo: 
+var n1 = Number.parseInt(window.prompt('Choose a number : '))
+
+numero em string:
+
+String(n) ou n.toString()
+ 
+`${variavel}` -> placeholder, outra forma de concatenar.
+
+${} so funciona com aspas ``
+
+s.length // quantos caracteres a string tem
+s.toUpperCase() // tudo para 'MAIÚSCULAS'
+s.toLowerCase() // tudo para 'minúsculas'
+
+document.write = escreve na tela uma resposta.
+document.writeln = escreve na tela com quebra de linha.
+
+
+n1.toFixed(2) = arredonda o numero final
+n1.toFixed(2).replace('','') = troca ponto por virgula ou vice-versa.
+
+comando para mostrar valor em real
+
+n1.toLocaleString('pt-BR', {style: 'currency', 'currency: 'BRL'})
+
+-------------------------------------------------------------------------------
+
+Operadores
+
+Aritméticos, Atribuição, Relacionais, Lógicos e Ternário 
+
+Aritméticos: +,-,*,/,%(resto da divisão inteira),**(Potência)
+
+* Atenção na hierarquia das operações. 5+3/2 = 6.5, pois a ordem decide dividir antes de somar
+
+* Acrescenta parenteses na operação principal: (5+3) / 2 = 4
+por estar entre parenteses, 5+3 e feito primeiro antes da divisão.
+
+
+Ordem de Precedência dos Operadores:
+
+1- ()
+2- **
+3- *,/,%
+4- +,-
+
+Atribuição Simples no Nodejs:
+
+> var a = 5 + 3
+undefined
+> a
+8
+> var b = 5*3 /2
+undefined
+> b
+7.5
+> var b = a%5
+undefined
+> b
+3
+> var c = 5*b**2
+undefined
+> c
+45
+> var d = 10 - a/2
+undefined
+> d
+6
+> var e = 6*2/d
+undefined
+> e
+2
+> var f = b%e + 4/e
+undefined
+> f
+3
+
+Auto-atribuições:
+
+var n = 3
+n = n + 4
+n= 7 (deixa de valer 3, e passa a valer 7)
+
+Simplificando
+
+n+=4 versão simplificada de n = n+4
+(so se aplica quando a variavel recebe ela mesma)
+
+Versões simplificadas:
+
+n = n + 4 -> n += 4
+n = n - 5 -> n -= 5
+n = n * 4 -> n *= 4
+n = n / 2 -> n /= 2
+n = n ** 2 -> n **= 2
+n = n % 5 -> n %= 5 
+
+Incremento
+
+var x = 5
+x  x + 1 vira x++ ou x-- (pode ser ++x ou --x)
+
+Relacionais
+
+>, <, >=, <=, ==(igual), !=(diferente)
+
+- Toda expressão com operador relacional, será um resultado boolean (True ou False)
+
+Identidade
+
+* O simbolo de igualdade == não julga a tipografia dos numeros
+* pra verificar se o símbolo é idêntico usa o === ou desigual com !==
+
+Lógicos
+
+!(negação), &&(conjunção ou e), ||(disjunção, ou)
+
+! = resposta true or false
+
+&& = operador binário (calcula duas condições)
+só retorna true se as duas condições forem verdadeiras, caso contrário, false.
+
+|| = operador binário (basta que um resultado seja verdadeiro, para retornar verdadeiro)
+
+
+Hierarquia de operadores. (a>b && b % 2 ==0)
+
+1º Operadores aritmeticos, 2ºoperadores relacionais e 3ºoperadores lógicos
+
+1º !, 2 º &&, 3 º || (hierarquia dos operadores lógicos)
+
+Como o Javascript lê as expressões:
+
+idade >= 15 && idade <= 17 (a idade está entre 15 e 17?)
+
+estado == 'RJ' || estado == 'SP' (o estado é RJ ou SP?)
+
+salário > 1500 && sexo != 'M' (o salário é acima de 1500 e não é homem? )
+
+
+Ternário
+
+?: ( teste, true, false) = junta 3 operandos
+V ou F, resultado do teste lógico se for verdadeiro ou resultado se o teste for reprovado.
+
+---------------------------------------------------------------
+
+DOM (Document Object Model)
+
+- DOM é um modelo de documento para objetos que compõem o website.
+
+- DOM funciona somente no JS do Navegador.
+
+Árvore DOM (window)
+
+- window: é a janela que compõe toda a tela do Navegador e suas informações.
+
+- Window compõe: location, document, history
+
+- document compõe: HTML -> head e body. (filhos de HTML)
+
+- Dentro de head compõe: meta e title
+
+- Dentro de body compõe: h1, p, p, div
+
+- Dentro de p compõe: strong 
+
+* innerText = pega o texto sem formatação
+* innerHTML = pega o texto com formatação
+
+- Você pode selecionar os elementos no DOM por:
+
+	- Marca
+	- ID
+	- Nome
+	- Classe
+	- Seletor
+
+Marca: getElementsByTagName()
+ID: getElementByid()
+Nome: getElementsByName()
+Classe: getElementsByClassName()
+Seletor: querySelector() ou querySelectorAll() (mais recomendado e método mais recente)
+
+# = representa ID 
+. = representa Classe
+
+----------------------------------------------------------------------------------------
+
+Eventos DOM
+
+- Eventos é tudo o que possa acontecer com qualquer elemento, exemplo (DIV).
+
+- mouseenter quando entra com o mouse dentro da div
+
+- mousemove quando passa com o mouse em cima da div.
+
+- mousedown pressionar o click  na div
+
+- mouseup soltar o click na div
+
+- click evento de clicar na div
+
+- mouseout tirar o mouse da div
+
+- Funções: Conjunto de códigos que serão executados somente quando um evento ocorrer.
+
+function ação(parâmetros){
+  		bloco
+	}
+
+Criando eventos com HTML:
+
+<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+
+Criando eventos com JS:	
+
+var area=window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+* Você pode verificar erros no código pelo Inspecionar
+
+-------------------------------------------------------------------------------
+
+Condições no JavaScript 
+
+Condições Simples, Condições Compostas; 
+Condições Aninhadas e Condições Múltiplas.
+
+Estrutura Condicional:
+
+if(condição) {
+	true
+} else {
+	false
+}
+
+Tipos de Condição
+
+* Condição simples:
+
+	if(condição){
+		true
+	}
+
+* Condição composta:
+
+	if(condição) {
+	true
+} else {
+	false
+}
+
+* Node Exec: Extensão que executa o Node no VSCODE utilizando o JS.
+
+* Pressione F8 para executar o NodeJS no VSCODE.
+
+- console.log = pemite escrever na tela usando JS.
+
+- Sempre usar as aspas `` quando for escrever entre parenteses.
+
+Condições Aninhadas
+
+- Se resposta for verdade faz uma condição, senão faz outra. (Uma condição dentro da outra)
+
+- Verificando hora atual = newDate() e getHours()
+
+exemplo: 
+	var horabrasil = new Date()
+	var hora = horabrasil.getHours 
+
+Condição Multipla
+
+- Utiliza expressões (exemplo; switch)
+
+- Ela possui mais condições que a Aninhada.
+
+- Realiza o teste de valores dentro de uma condição
+
+- Útil em situações específicas.
+
+- switch (expressão) {
+
+	case valor1:
+		(realiza operação)
+		break
+	case valor2:
+		(realiza operação)
+		break
+	case valor3:
+		(realiza operação)
+		break
+	default:
+		break
+}
+
+- switch é recomendado a ser utilizado em valores exatos, sem que exista intervalos (if)
+
+-----------------------------------------------------------------------------------------------------------
+
+
+- Sempre planeje a estrutura do site antes de criar
+
+***************************************************************************************
+- MODELO DE SITE:
+
+	<body>
+		<header>
+			TITULO
+
+		<section>
+			<div>
+		<footer>
+******************************************************************************** 
+
+- sinal de copyright = <p>&copy
+
+- script:src = cria um script de JS separado ao html e css
+
+<body onload> = carrega a pagina com algum comando em JS
+
+exemplo: <body onload ="carregar()"> -> a pagina assim que atualizar irar executar a função carregar em JS.
+
+- // (comentário no JS)
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+

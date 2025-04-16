@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D E T R A N</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            color: black;
+            text-align: center;
+        }
+        h1{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>SISTEMA DE MULTAS</h1>
+    <input type="number" name="txtveloci"id="txtveloci">Km/h
+    <input type="button" value="Verificar velocidade" onclick="calcular()" >
+    <div id="resultado"></div>
+    <script>
+
+        function calcular(){
+            var txtvelocidade = window.document.getElementById('txtveloci')
+            var vel = Number(txtvelocidade.value)
+            var resultado = document.querySelector('div#resultado')
+            resultado.innerHTML = `<p><strong>VELOCIDADE DO CARRO:</strong>${vel}Km/h.</p>`
+            if (vel > 60){
+                resultado.innerHTML += `<p>ULTRAPASSOU O LIMITE DE VELOCIDADE.</p>`
+                resultado.innerHTML += `<strong>SUJEITO A MULTA!</strong>`
+                resultado.style.background = 'darkred'
+                resultado.style.color = 'white'
+            }else{
+                resultado.innerHTML += `<p>NÃO ULTRAPASSOU O LIMITE DE VELOCIDADE.</p>`
+                resultado.innerHTML += `<strong>CONTINUE DIRIGINDO COM SEGURANÇA!</strong>`
+                resultado.style.background = 'dodgerblue'   
+                resultado.style.color = 'white'
+            }
+        }
+
+    </script>
+</body>
+</html>

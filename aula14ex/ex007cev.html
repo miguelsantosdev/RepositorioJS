@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header>
+        <h1>QUAL A SUA IDADE ?</h1>
+    </header>
+    <section>
+        <div>
+            <p>Em que ano você nasceu :
+                <input type="number" name="anonasc" id="anonasc" min="0" max="2025">     
+            </p>
+            <p>Sexo: 
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="femi">
+                <label for="femi">Feminino</label>
+            </p>
+            <p id="verif">
+                <input type="button" value="Verificar" style="text-align: center;" onclick="verificar()">
+            </p>
+        </div>
+        <div id="final">
+          
+        </div>
+        
+    </section>
+    <footer>
+        <p>&copy;Code-Miguel</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
