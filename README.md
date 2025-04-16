@@ -1,8 +1,10 @@
 # RepositorioJS
 Repositorio de estudos em JavaScript da plataforma Curso em Video feito pelo mestre Gustavo Guanabara. 👨‍💻
 <br>
+
 Este repositório está sendo gerenciado no Github. 🛰️
 <br>
+
 LISTAS DE EXERCÍCIOS FEITOS DO MÓDULO A ATÉ O MÓDULO D DO CURSO ✔️
 <br>
 
