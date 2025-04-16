@@ -35,9 +35,7 @@ LISTAS DE EXERCÍCIOS FEITOS DO MÓDULO A ATÉ O MÓDULO D DO CURSO ✔️
 🟡 Exercício 09
 <a href="https://miguelsantosdev.github.io/RepositorioJS/exercicios/aula11/ex011cev.html">Visualizar Exercício 09.</a>
 <br>
-🟡 Exercício 10
-<a href="https://miguelsantosdev.github.io/RepositorioJS/aula13ex/ex006cev.html">Visualizar Exercício 10.</a>
-<br>
+
 🟡 Exercício 11
 <a href="https://miguelsantosdev.github.io/RepositorioJS/aula14ex/ex007cev.html">Visualizar Exercício 11.</a>
 <br>
