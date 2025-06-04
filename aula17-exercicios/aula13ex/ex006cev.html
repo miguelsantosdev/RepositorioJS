@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="contagem()">
+    <header>
+        <h1>C O N T A D O R</h1>
+    </header>
+    <section>
+       <main>
+           <p>
+               <div id="contagem">
+                    <label for="contar">Início: </label>
+                    <input type="number" name="Inicio" id="ini" max="10" min="0" required>
+               </div>
+           </p>
+           <p>
+                <div id="contagem">
+                    <label for="contar">Fim: </label>
+                    <input type="number" name="Fim" id="ifim" max="20" min="10" required>
+                </div>
+           </p>
+           <p>
+                <div id="contagem">
+                    <label for="contar">Passo: </label>
+                    <input type="number" name="Passo" id="ipasso" max="3" min="0" required>
+                </div>
+           </p>
+           <p>
+                <input type="button" value="Contar">
+           </p>
+       </main>
+    </section>
+    <footer>
+        <p>&copy;Code-Miguel</p>
+    </footer>
+    <script>
+        window.alert('Seja bem vindo ao C O N T A D O R !')
+        window.confirm('Faça uma contagem de 1 até 20')
+        window.prompt('Digite o seu numero da sorte. Se não tiver, escolha um.')
+    </script>
+</body>
+</html>
