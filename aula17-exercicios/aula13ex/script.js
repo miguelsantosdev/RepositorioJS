@@ -1,5 +1,5 @@
 var ifim, ini, ipasso= 0
-contador = ini + ipasso
+contador = contador + ipasso
 
 for (iinicio <= ifim; contador++;) {
     console.log(contador)
