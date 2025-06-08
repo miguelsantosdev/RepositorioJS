@@ -40,14 +40,23 @@
     </footer>
     <script>
 
+         
+
             window.alert('Seja bem vindo ao C O N T A D O R !')
             window.confirm('Faça uma contagem de 1 até 20')
             window.prompt('Digite o seu numero da sorte. Se não tiver, escolha um.') /* Window prompt retorna string */
-            var ini = ini
-            var ifim = ifim
-            var ipasso = ipasso
-            contador = contador + ipasso
+            function contagem(){
 
+                var ini = window.document.querySelector('input#ini')
+                var ifim = window.document.querySelector('input#ifim')
+                var ipasso = window.document.querySelector('input#ipasso')
+
+                var ini = ini
+                var ifim = ifim
+                var ipasso = ipasso
+                contador = contador + ipasso
+                res.innerHTML(`Contagem: ${contador}, `)
+            }
     </script>
 </body>
 </html>
