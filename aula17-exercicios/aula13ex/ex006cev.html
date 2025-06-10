@@ -3,60 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Contador</title>
     <link rel="stylesheet" href="style.css">
+    <title>O Contador</title>
 </head>
-<body onload="contagem()">
+<body>
     <header>
         <h1>C O N T A D O R</h1>
     </header>
-    <section>
-       <main>
-           <p> <!-- Usuario insere numero de inicio da contagem -->
-               <div id="contagem"> 
-                    <label for="contar">Início: </label>
-                    <input type="number" name="Inicio" id="ini" max="10" min="0" required>
-               </div>
-           </p>
-           <p> <!-- Usuario insere numero final da contagem -->
-                <div id="contagem">
-                    <label for="contar">Fim: </label>
-                    <input type="number" name="Fim" id="ifim" max="20" min="10" required>
-                </div>
-           </p>
-           <p> <!-- Contagem de passos do numero inicial ate o final -->
-                <div id="contagem">
-                    <label for="contar">Passo: </label>
-                    <input type="number" name="Passo" id="ipasso" max="3" min="0" required>
-                </div>
-           </p>
-           <p>  <!--Botão parara iniciar a contagem -->
-                <input type="button" value="Contar">
-           </p>
-       </main>
-    </section>
+    <main>
+        <section>
+            <div>
+
+            </div>
+            <div>
+                    
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy;Code-Miguel</p>
+
     </footer>
+
     <script>
-
-         
-
-            window.alert('Seja bem vindo ao C O N T A D O R !')
-            window.confirm('Faça uma contagem de 1 até 20')
-            window.prompt('Digite o seu numero da sorte. Se não tiver, escolha um.') /* Window prompt retorna string */
-            function contagem(){
-
-                var ini = window.document.querySelector('input#ini')
-                var ifim = window.document.querySelector('input#ifim')
-                var ipasso = window.document.querySelector('input#ipasso')
-
-                var ini = ini
-                var ifim = ifim
-                var ipasso = ipasso
-                contador = contador + ipasso
-                res.innerHTML(`Contagem: ${contador}, `)
-            }
+        window.alert('Seja bem vindo ao CONTADOR !')
+        window.confirm('Faça uma contagem de 1 até 20.')
+        window.prompt('Digite o seu número da sorte para prosseguir. Caso não tenha, escolha um.')
     </script>
 </body>
 </html>

@@ -1,7 +1,6 @@
-var ifim, ini, ipasso= 0
-contador = contador + ipasso
+var contador = 0
 
-for (iinicio <= ifim; contador++;) {
-    console.log(contador)
-    contador= contador + contador
+while (contador <= 6) {
+    console.log(`${contador}`)
+    contador++
 }
