@@ -36,15 +36,22 @@ function contagem() {
 
     // Lógica 
 
-    if(inicio < 0 || inicio > 10 || fim < 10 || fim > 20 || passo < 1 || passo > 3) {
+    /*if(inicio < 0 || inicio > 10 || fim < 10 || fim > 20 || passo < 1 || passo > 3) {
         // não permite que o usuario digite um valor fora dos limites.
         alert("Os valores não estão de acordo com as regras. Digite novamente !"); // retorna desde o inicio e gera um alerta.
         return;
-    } 
+    } */
   
     res.innerHTML += "Contagem:";
-    for(contador = inicio; contador <= fim; contador += passo ){
-        res.innerHTML += `-> ${contador}`;
+    
+    if (inicio < fim) { // contagem progressiva
+        for(contador = inicio; contador <= fim; contador += passo ){
+            res.innerHTML += `-> ${contador} \u{1F648}` // U+1F648 = codigo do emoji, \u serve para ler o emoji
+        }
+    } else { // contagem regressiva
+        for(contador = inicio; contador >=fim; contador -= passo){
+            res.innerHTML += `-> ${contador} \u{1F64A}`
+        }
     }
      
     // Mostra resultado na tela.
