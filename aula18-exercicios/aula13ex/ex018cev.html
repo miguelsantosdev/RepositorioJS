@@ -13,11 +13,15 @@
         </header>
         <section>
                 <div>
-                    <label for="multiplica">Digite um número: </label>
-                    <input type="number" name="numero" id="num" min="0" max="10" placeholder="de 0 a 10" required>
-                </div>
-            <input type="button" value="Ver Tabuada" onclick="calcular()">
+                    <p>
+                        <label for="multiplica">Digite um número: </label><input type="number" name="numero" id="num" min="0" max="10" placeholder="de 0 a 10" required> </p>
 
+                        <input type="button" value="Ver Tabuada" onclick="calcular()">  
+                        <select name="tabuadas" id="tabnum"> <!-- lista de numeros da tabuada -->
+                            <option value="v1">valor</option>
+                          
+                        </select>
+                </div>
             <script src="script.js"></script>
         </section>
     </main>

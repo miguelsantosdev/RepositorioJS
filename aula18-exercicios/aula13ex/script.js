@@ -1,36 +1,25 @@
 window.alert('Seja bem vindo a  T A B U A D A ')
 window.confirm('Esclha um número de 0 a 10 e veja sua Tabuada')
 
-const num1 = Number(document.getElementById('num').value);
-const resultado = document.createElement("p")
+// Conexão HTML e JavaScript
+function calcular() {
+    let numero = document.getElementById('num');  // numero recebe o numero que o usuario escolher (num)
+    let vertabuada = document.getElementById('tabnum') 
 
-resultado.innerHTML = "";
+// Lógica
+    if (numero.value.lenght == 0){ // se numero tiver for igual a zero exibe alerta.
+            alert('Por favor, digite um número. ')    
+        } else {
+            let n = Number(numero.value) // le o valor numero e guarda na let n
+            let contador = 1 // contador refere a contagem de vezes que ira multiplicar o numero.
+            tabnum.innerHTML = '' // deixa o resultado da tabuada em branco ao retornar a contagem.
+            while (contador <= 10){ // laço de repetição de 1 a 10
 
-var mult0 = 0;
-var mult1 = 1;
-var mult2 = 2;
-var mult3 = 3;
-var mult4 = 4;
-var mult5 = 5;
-var mult6 = 6;
-var mult7 = 7;
-var mult8 = 8;
-var mult9 = 9;
-var mult10 = 10;
+                let item = document.createElement('option') // cria lista de numeros da tabuada de 1 a 10.
+                item.text = `${n} x ${contador} = ${n*contador}`
+                vertabuada.appendChild(item) // cria um elemento filho para que a tabuada (item) seja exibida.
 
-// validação dos dados
-function calcular()
-    if(isNaN(num1)) {
-        alert("Preencha o campo com um número de 0 a 10.");
-        return;
-    }
-
-    // Lógica 
-
-    if(num1 < 0 || num > 10){
-        alert("O numero nao pode ser menor que 0 e maior que 10. Digite novamente. ")
-        return;
-    }
-
-    resultado.innerHTML += "Tabuada";
-
+                contador++ // continuar a contagem até o final.
+            }          
+        }
+}
