@@ -1,5 +1,5 @@
 window.alert('Seja bem vindo a  T A B U A D A ')
-window.confirm('Esclha um número de 0 a 10 e veja sua Tabuada')
+window.confirm('Escolha um número de 0 a 10 e veja sua Tabuada')
 
 // Conexão HTML e JavaScript
 function calcular() {
