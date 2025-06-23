@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +12,18 @@
             <section>
                 <div>
                     <p>
-                        <label for="analise">Escolha um número: </label><input type="number" name="numeros" id="anum" required placeholder="1 a 100"min="1" max="100"><input type="button" value="Adicionar" onclick="adicionar()">
+                        Escolha um número:
+                        <input type="number" name="numeros" id="anum" required placeholder="1 a 100"min="1" max="100"><input type="button" value="Adicionar" onclick="adicionar()"> <!-- label para escolher o numero entre 1 a 100, onclick executa ação para inserir um numero (function)-->
                         <br>
                         <br>
-                        <select name="numlista" id="numlist" size="4"></select>
+                        <select name="lista" id="numlist" size="4"></select> <!-- select representa a lista onde os valores inseridos ficarão. -->
                         <br>
-                        <br>
-                        <input type="button" value="Analisar" onclick="analise()">
+                        <div id="analisando">
+                            <input type="button" value="Analisar" onclick="analisar()">
+                        </div> <!-- botão para analisar os valores inseridos, contém function analise()-->
                     </p>
                 </div>
-                <div id="res">
-
+                <div id="res"> <!--Resultado da análise. Liga com JS -->
                 </div>
             </section>
         </main>
