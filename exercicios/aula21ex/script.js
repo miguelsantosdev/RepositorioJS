@@ -41,7 +41,9 @@ function adicionar(){ // função adiciona um numero ao usuario clicar em Adicio
 
          listn.appendChild(item) // esta linha passa item como elemento filho da lista. appendChild(item). Faz com o elemento seja inserido na lista em definitivo e escrevendo a mensagem em definitivo.
 
-         alert('valor inserido') 
+         alert('valor inserido')
+         
+        
 
     } else {
         //window.alert('Valor inválido.') // Valor inválido. Valor incorreto
@@ -50,10 +52,39 @@ function adicionar(){ // função adiciona um numero ao usuario clicar em Adicio
     n.value = '' // atributo.value = '' faz com que sempre limpre a barra de digitação do usuário após enviar um valor.
 
     n.focus() // atributo.focus() faz com que o cursor não saia da barra de digitação do usuario. 
+
+     nres.innerHTML = '' // limpa os valores inseridos 
 }
 
 function analisar(){
-    
+    if (valores.length == 0){ // Verifica se o campo esta vazio antes de analisar
+
+        window.alert('Digite um valor para poder analisar.') // se estiver vazio retornar esse alerta.
+
+    } else { // Executa a análise de valores
+
+        let total = valores.length
+
+        let maior = valores[0] // maior e menor recebem o valor na posição 0, ou seja, o primeiro valor adicionado.
+        let menor = valores[0] 
+
+        for(let pos in valores) { // para pos(posição do numero do vetor[valores]) faça...
+
+            if (valores[pos] > maior) // se o valor que esta em pos for maior que a valor da variavel maior.
+                maior = valores[pos]
+            if (valores[pos] < menor) // se o valor que esta em pos for menor que o valor da variavel menor.
+                menor = valores[pos]
+        }
+
+        nres.innerHTML = ''  // campo de resultado permanece vazio até a analisar os valores
+
+        nres.innerHTML += `<p>No total, foram cadastrados ${total} números.</p>` // escreve resultado na tela 
+
+        nres.innerHTML += `<p>O maior número adicionado foi ${maior}.</p>`  // escreve resultado na tela 
+
+        nres.innerHTML += `<p>O menor número adicionado foi ${menor}.</p>` // escreve resultado na tela 
+
+    }
 }
 
 
