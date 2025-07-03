@@ -5,7 +5,7 @@ Repositorio de estudos em JavaScript da plataforma Curso em Video feito pelo mes
 Este repositório está sendo gerenciado no Github. 🛰️
 <br>
 
-LISTAS DE EXERCÍCIOS FEITOS DO MÓDULO A ATÉ O MÓDULO D DO CURSO ✔️
+LISTAS DE EXERCÍCIOS FEITOS DO MÓDULO A ATÉ O MÓDULO F DO CURSO ✔️
 <br>
 
 🟡 Exercício 01
