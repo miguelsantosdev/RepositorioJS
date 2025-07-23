@@ -44,3 +44,11 @@ LISTAS DE EXERCÍCIOS FEITOS DO MÓDULO A ATÉ O MÓDULO F DO CURSO ✔️
 🟡 Exercício 12
 <a href="https://miguelsantosdev.github.io/RepositorioJS/exercicios/aula21ex/index.html">Visualizar Exercício 12.</a>
 <br>
+🟡 Exercício 13
+<a href="https://miguelsantosdev.github.io/RepositorioJS/aula17-exercicios/aula13ex/ex017cev.html">Visualizar Exercício 13.</a>
+<br>
+🟡 Exercício 14
+<a href="https://miguelsantosdev.github.io/RepositorioJS/aula18-exercicios/aula13ex/ex018cev.html">Visualizar Exercício 14.</a>
+<br>
+
+
